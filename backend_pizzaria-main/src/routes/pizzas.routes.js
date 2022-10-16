@@ -1,8 +1,9 @@
-import { Router } from "express";
-import { findMany, create } from "../controllers/pizza.controller.js";
-const pizzasRoutes = Router();
+import {Router} from 'express'
+import {findMany, create} from '../controllers/pizza.controller.ts'
 
-pizzasRoutes.get("/pizzas", findMany);
-pizzasRoutes.post("/pizzas", create);
+const pizzasRoutes = Router()
 
-export default pizzasRoutes;
+pizzasRoutes.get('/pizzas', findMany)
+pizzasRoutes.post('/pizzas',create)
+
+export default pizzasRoutes
